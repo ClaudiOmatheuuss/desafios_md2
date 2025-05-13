@@ -2,7 +2,7 @@
 # Entrada: CPF com 11 dígitos
 # Saída: CPF Válido ou CPF Não Válido
 
-print("_"*40 + "\n Algoritmo de validação de CPF \n" + "_"*40)
+print("Algoritmo de validação de CPF \n")
 cpf = list(input("Insira o seu CPF(apenas digitos): "))
 
 caracteres_invalidos = ['-', '.']
@@ -38,11 +38,12 @@ if resto_2 < 2:
 if resto_2 >= 2:
   verificacao_2 = int(cpf[-1]) == (11-resto_2)
 
-
+print("_" * 40)
 if (verificacao_0 and verificacao_1 and verificacao_2) == True:
   print("CPF Válido")
 else: 
   print("CPF Inválido")
+print("_" * 40)
 
 # -------------------------------------------------------------------------                      
 
